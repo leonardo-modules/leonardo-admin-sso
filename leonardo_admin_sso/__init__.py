@@ -1,7 +1,6 @@
 
 from django.apps import AppConfig
-
-from .widget import *
+from django.utils.translation import ugettext_lazy as _
 
 default_app_config = 'leonardo_admin_sso.Config'
 
