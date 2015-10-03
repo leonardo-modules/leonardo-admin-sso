@@ -4,7 +4,7 @@ from django.utils.translation import ugettext_lazy as _
 
 default_app_config = 'leonardo_admin_sso.Config'
 
-
+LEONARDO_OPTGROUP = 'Admin SSO'
 LEONARDO_APPS = ['leonardo_admin_sso', 'admin_sso']
 
 LEONARDO_AUTH_BACKENDS = [
@@ -14,11 +14,10 @@ LEONARDO_AUTH_BACKENDS = [
 LEONARDO_CONFIG = {
     'DJANGO_ADMIN_SSO_OAUTH_CLIENT_ID': ('8082..', _(
         'OAuth Client ID')),
-    'DJANGO_ADMIN_SSO_OAUTH_CLIENT_SECRET': ('8082..', _(
+    'DJANGO_ADMIN_SSO_OAUTH_CLIENT_SECRET': ('secret', _(
         'OAuth Client Secret')),
     'DJANGO_ADMIN_SSO_OAUTH_CLIENT_SECRET': (True, _(
-        'Show Login Button for SSO')),
-
+        'Show Login Button for SSO'))
 }
 
 
