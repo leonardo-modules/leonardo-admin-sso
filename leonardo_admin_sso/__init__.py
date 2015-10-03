@@ -16,7 +16,7 @@ LEONARDO_CONFIG = {
         'OAuth Client ID')),
     'DJANGO_ADMIN_SSO_OAUTH_CLIENT_SECRET': ('secret', _(
         'OAuth Client Secret')),
-    'DJANGO_ADMIN_SSO_OAUTH_CLIENT_SECRET': (True, _(
+    'DJANGO_ADMIN_SSO_ADD_LOGIN_BUTTON': (True, _(
         'Show Login Button for SSO'))
 }
 
