@@ -12,6 +12,16 @@ LEONARDO_AUTH_BACKENDS = [
     'admin_sso.auth.DjangoSSOAuthBackend',
 ]
 
+LEONARDO_CONFIG = {
+    'DJANGO_ADMIN_SSO_OAUTH_CLIENT_ID': ('8082..', _(
+        'OAuth Client ID')),
+    'DJANGO_ADMIN_SSO_OAUTH_CLIENT_SECRET': ('8082..', _(
+        'OAuth Client Secret')),
+    'DJANGO_ADMIN_SSO_OAUTH_CLIENT_SECRET': (True, _(
+        'Show Login Button for SSO')),
+
+}
+
 
 class Config(AppConfig):
     name = 'leonardo_admin_sso'
