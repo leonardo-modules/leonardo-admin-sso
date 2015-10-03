@@ -30,7 +30,7 @@ class Config(AppConfig):
         import leonardo.site
         leonardo.site.leonardo_admin.login_template = 'admin_sso/login.html'
 
-        # monkey path settings
+        # monkey patch settings
         from django.conf import settings as django_settings
         from admin_sso import settings
         for key in list(LEONARDO_CONFIG.keys()):
