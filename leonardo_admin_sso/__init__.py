@@ -31,7 +31,7 @@ class Config(AppConfig):
         leonardo.site.leonardo_admin.login_template = 'admin_sso/login.html'
 
         # monkey patch settings
-        from django.conf import settings as django_settings
+        from constance import config
         from admin_sso import settings
         for key in list(LEONARDO_CONFIG.keys()):
-            setattr(settings, key, getattr(django_settings, key, None))
+            setattr(settings, key, getattr(config, key, None))
